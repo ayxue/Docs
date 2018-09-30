@@ -1,0 +1,60 @@
+﻿@using OpenApi.Web.Models.Logins
+@model SaxoLoginViewModel
+
+@{
+    ViewBag.Title = "SaxoLogin";
+    var authenticationUrl = Model.AuthenticationUrl + "/AuthnRequest";
+}
+
+<h2>Saxo Login</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            <form action="@authenticationUrl" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ApplicationUrl, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        <p>@Model.ApplicationUrl</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.AuthenticationUrl, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        <p>@Model.AuthenticationUrl</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.SamlRequest, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        <p>@Model.SamlRequest</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.SerialzedSamlRequest, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        <input type="text" name="SAMLRequest" value="@Model.SerialzedSamlRequest"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="submit" value="GO" class="btn btn-default" />
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <iframe name="saxoFrame" width="800" height="600"></iframe>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
