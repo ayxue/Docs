@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighPerfBenchmark", "HighPerfBenchmark\HighPerfBenchmark.csproj", "{F65D1DB0-82F9-46FB-AA66-0FBC64297233}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65D1DB0-82F9-46FB-AA66-0FBC64297233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65D1DB0-82F9-46FB-AA66-0FBC64297233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65D1DB0-82F9-46FB-AA66-0FBC64297233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65D1DB0-82F9-46FB-AA66-0FBC64297233}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFDD20C2-34EB-4CB4-901B-D54FB5304BE6}
+	EndGlobalSection
+EndGlobal
